@@ -55,7 +55,7 @@ export default function SignInSide() {
         if (data.status == "ok") {
           alert("login suscess");
           localStorage.setItem("token", data.token);
-          window.location = '/album'
+          window.location = "/album";
         } else {
           alert("login fail");
         }

@@ -54,7 +54,7 @@ export default function Album() {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.status == "ok") {
+        if (data.status === "ok") {
           //alert("authen suscess");
           
         } else {

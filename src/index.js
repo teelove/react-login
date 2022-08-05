@@ -4,8 +4,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from './Login.js';
+import Login from './Login';
 import Album from "./Album";
+import Register from "./Register"
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -13,6 +16,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/album" element={<Album />} />
 
     </Routes>

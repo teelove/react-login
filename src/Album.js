@@ -43,8 +43,6 @@ const handleLogout = (event) => {
 export default function Album() {
   useEffect(() => {
     const token = localStorage.getItem('token')
-
-
     fetch("http://localhost:3333/authen", {
       method: "POST", // or 'PUT'
       headers: {
@@ -67,8 +65,6 @@ export default function Album() {
         console.error("Error:", error);
       });
   }, [])
-
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
